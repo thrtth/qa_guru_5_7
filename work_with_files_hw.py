@@ -15,6 +15,9 @@ PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 RESOURCES_PATH = os.path.join(PROJECT_ROOT_PATH, 'resources')
 TMP_PATH = os.path.join(PROJECT_ROOT_PATH, 'tmp')
 
+if not os.path.exists(TMP_PATH):
+    os.mkdir(TMP_PATH)
+
 
 def test_csv():
     # TODO оформить в тест, добавить ассерты и использовать универсальный путь
